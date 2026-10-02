@@ -1,0 +1,183 @@
+:root {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  background: #0b1026;
+  color: #e8ecff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 10%, #1e2a78 0%, transparent 40%),
+    radial-gradient(circle at 80% 90%, #2b1055 0%, transparent 40%),
+    #0b1026;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.estacion {
+  width: 100%;
+  max-width: 720px;
+  margin: 40px 16px;
+  padding: 28px;
+  border: 1px solid #3a4bd8;
+  border-radius: 16px;
+  background: rgba(10, 14, 40, 0.85);
+  box-shadow: 0 0 40px rgba(74, 96, 255, 0.35);
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0 0 4px;
+  color: #7ff3ff;
+}
+
+.subtitulo {
+  margin: 0 0 24px;
+  color: #9aa6ff;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(26, 34, 88, 0.6);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #b9c2ff;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #3a4bd8;
+  border-radius: 8px;
+  background: #0b1026;
+  color: #e8ecff;
+  font: inherit;
+}
+
+.formulario button {
+  grid-column: 1 / -1;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4a60ff;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6a7cff;
+}
+
+.siguiente {
+  margin-top: 24px;
+  padding: 20px;
+  border: 2px solid #7ff3ff;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(127, 243, 255, 0.12), rgba(74, 96, 255, 0.12));
+}
+
+.siguiente h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #7ff3ff;
+}
+
+.nombre {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.motivo {
+  margin: 4px 0;
+  color: #c7cfff;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.etiqueta.urgente {
+  background: #ff9f8a;
+  color: #2b0a03;
+}
+
+.etiqueta.normal {
+  background: #9fe8ac;
+  color: #05230c;
+}
+
+.posicion {
+  color: #7ff3ff;
+  font-weight: 700;
+}
+
+.nombre-lista {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.vacio {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px dashed #5a6bd8;
+  border-radius: 12px;
+  text-align: center;
+  color: #aeb7ff;
+}
+
+.lista {
+  margin-top: 24px;
+}
+
+.lista h2 {
+  color: #9aa6ff;
+  font-size: 18px;
+}
+
+ol {
+  margin: 12px 0 0;
+  padding-left: 24px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+.historial {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(26, 34, 88, 0.5);
+}
+
+.historial h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #9aa6ff;
+}
